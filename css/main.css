@@ -1,0 +1,365 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading_background {
+    background-image: linear-gradient(-180deg, #ffffff, #00000052);
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.intro_page {
+    background-image: linear-gradient(-180deg, #ffffff, #00000052);
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.bug_page {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bar {
+    width: 600px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: rgb(117, 117, 117);
+}
+
+#loading_bar {
+    position: absolute;
+    left: 0;
+    height: 10px;
+    border-radius: 50px;
+    background-color: rgb(155, 208, 241);
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo_container_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo_container_two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10vw;
+}
+
+.insect_logo {
+    width: 753px;
+    height: 584px;
+}
+
+.intro_insect_logo {
+    width: 300px;
+}
+
+.start_page {
+    padding-top: 260px;
+    padding-bottom: 260px;
+}
+
+#navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(155, 208, 241);
+    top: 0;
+}
+
+#navBar li {
+    float: left;
+}
+
+#navBar li a {
+    font-family: 'Poppins', sans-serif;
+    padding: 90px;
+    font-size: 20px;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navBar li a:hover {
+    background-color: rgb(88, 88, 88);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.stick+.intro_info_two {
+    padding-top: 60px;
+}
+
+.intro_info_one h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 90px;
+    font-size: 35px;
+}
+
+.intro_info_two h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 90px;
+    font-size: 35px;
+}
+
+.intro_info_two p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 25px 250px;
+    font-size: 20px;
+    line-height: 2em;
+    word-spacing: 5px;
+    /* width: 1200px; */
+}
+
+.interactive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    border-radius: 15px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.explode_buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.explode {
+    margin-right: 200px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 85, 255);
+}
+
+.explode:hover {
+    background-color: rgb(255, 112, 112);
+    transition: 0.8s;
+}
+
+.assemble {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 85, 255);
+}
+
+.assemble:hover {
+    background-color: rgb(255, 112, 112);
+    transition: 0.8s;
+}
+
+#test h1 {
+    color: cornsilk;
+}
+
+.infoOne {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* background-color: rgba(255, 112, 112, 0.336); */
+    width: 500px;
+    height: 921px;
+    z-index: 100;
+    position: absolute;
+}
+
+.infoOne h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.infoOne li {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 25px;
+    padding-left: 50px;
+    line-height: 30px;
+}
+
+#interactiveBeetleCon {
+    /* margin-top: 40px; */
+    position: absolute;
+    /* overflow: hidden; */
+}
+
+.circle {
+    position: absolute;
+    background-color: #c50303;
+    border: 3px solid #ec7575;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    /* animation */
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes glow {
+    /* start at 0% to end 100% */
+    0% {
+        box-shadow: 0 0 2px rgba(255, 209, 220, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(255, 209, 220, 1);
+    }
+}
+
+#circle0 {
+    top: -290px;
+    margin-left: -9px;
+    opacity: 0;
+}
+
+#circle1 {
+    top: 120px;
+    margin-left: -9px;
+    opacity: 0;
+}
+
+#circle2 {
+    top: -100px;
+    margin-left: -9px;
+    opacity: 0;
+}
+
+.boxes {
+    visibility: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgba(255, 112, 112, 0.336);
+    width: 500px;
+    height: 921px;
+    z-index: 100;
+    position: absolute;
+}
+
+#info0 {
+    top: -435px;
+    left: 451px;
+}
+
+#info0 h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+#info0 li {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding: 15px;
+    padding-left: 50px;
+    line-height: 30px;
+}
+
+#info1 {
+    top: -435px;
+    left: 451px;
+}
+
+#info1 h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+#info1 li {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding: 15px;
+    padding-left: 50px;
+    line-height: 30px;
+}
+
+#info2 {
+    top: -435px;
+    left: 451px;
+}
+
+#info2 h2 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+#info2 li {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    padding: 15px;
+    padding-left: 50px;
+    line-height: 30px;
+}
